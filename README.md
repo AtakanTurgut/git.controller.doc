@@ -284,8 +284,21 @@ Detached HEAD :
 ![](pictures/gitswitchmaster.PNG)
 
 ### Reset vs Revert
-- Geçmiş bir `commit'e` dönüp ondan önceki bütün komiyleri kaldırmak için:
+- Geçmiş bir `commit'e` dönüp ondan önceki bütün commit'leri kaldırmak için - commit'lerdeki değişiklikler silinmez:
 ```bash
         git reset donulecekCommitId
 ```
 ![](pictures/gitreset.PNG)
+
+- Geçmiş bir `commit'e` dönüp ondan önceki bütün commit'leri ve yapılan işlemleri kaldırmak için:
+```bash
+        git reset --hard donulecekCommitId
+```
+![](pictures/gitresethard1.PNG)
+![](pictures/gitresethard2.PNG)
+
+- Geçmiş bir `commit'e` dönüp ondan önceki commit'leri silmeden yeni commit oluşturarak aynı branch üzerinden devam edebilmek için:
+```bash
+        git revert --hard donulecekCommitId
+```
+![](pictures/gitrevert.PNG)
