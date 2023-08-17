@@ -225,3 +225,5 @@ Master branc içerisinde commit oluşturarak Merge Conflict işlemini çözebili
 ![](pictures/gitconflict3.PNG)
 ![](pictures/gitconflict4.PNG)
 
+### Stash
+Başka bir branch'da oluşturulan bir dosya commit işlemi yapılmadan git'e eklendiyse (git add <>) ve ardından tekrar başka bir branch'e geçildiyse diğer branch'de oluşturulan dosya da geçilen branch'e taşınır. 
