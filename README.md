@@ -269,5 +269,6 @@ Var olan saklı Stash'lerin hepsini listeden temizlemek için:
 ### Checkout
 - Commitlerimiz arasında gezinebilmek için:
 ```bash
-        git checkout
+        git checkout commitID
 ```
+![](pictures/gitcheckout.PNG)
