@@ -218,3 +218,6 @@ Hangi branch'a merge'leyeceksek o branch üzerinde olmalıyız.
 ![](pictures/gitfastforward.PNG)
 
 - Merge Conflict : 
+![](pictures/gitconflict1.PNG)
+![](pictures/gitconflict2.PNG)
+Karar hangi işlemi tutacağımıza karar vermemizi ister.
