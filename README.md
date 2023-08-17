@@ -142,11 +142,6 @@ Aksi halde git'i birkaç farklı aktif etme durumu çakışmalara sebep olabilir
 - İşleme alma mesajı yapılanları açıklayıcı olmalıdır.
  ![](pictures/gitcommit.PNG)
 
-- `git add <>` ve `git commit` tek tek yazmaktansa ikisini birden kullananiliriz.
-```bash
-        git commit -a "commit message"
-```
-
  - İşlemleri görebilmek için:
  ```bash
         git log
@@ -158,3 +153,24 @@ Her commit'in kendine ait bir işlem numarası olur. <br/>
 
 Üzerinde bulunduğumun branch'ı gösterir
 ![](pictures/gitlog.PNG)
+
+- Yapılan değişiklikleri tekrardan Git'e eklemek ve kontrolleri tekrardan sağlamak için kısaca:
+```bash
+        git add .
+        git commit -m "commit message"
+        git status
+        git log
+```
+![](pictures/gitbref.PNG)
+
+- Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
+- `git add` yapılmaması gerekir.
+- Öncelikle `.gitignore` isimli bir dosya oluşturmalıyız.
+```bash
+        touch .gitignore
+```
+gitignore dosyası içerisine gizli kalmasını istediğimiz dosyayı uzantısıyla birlikte yazmalıyız.
+Gizli kalmasını istediğimiz dosya artık Git sorumluluğuna girmez.
+![](pictures/gitignore2.PNG)
+![](pictures/gitignore1.PNG)
+
