@@ -301,4 +301,5 @@ Detached HEAD :
 ```bash
         git revert --hard donulecekCommitId
 ```
-![](pictures/gitrevert.PNG)
+![](pictures/gitrevert1.PNG)
+![](pictures/gitrevert2.PNG)
