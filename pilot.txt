@@ -1,2 +1,4 @@
 deneme yazısı
 deneme yazısı
+
+branchları birleştir
