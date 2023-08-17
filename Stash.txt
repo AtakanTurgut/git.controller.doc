@@ -1,3 +1,4 @@
 Stash durumu
 
 Bu durumu sakla.
+değişiklik

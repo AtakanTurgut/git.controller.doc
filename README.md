@@ -238,3 +238,22 @@ Diğer branch üzerinde işlerimizi hallettikten sonra, kendi branch'imizde sakl
         git stash pop
 ```
 ![](pictures/gitstashpop.PNG)
+
+Saklanan verilerin listesini görebilmek için:
+```bash
+        git stash list
+```
+![](pictures/gitstashlist.PNG)
+
+İstediğimiz `Stash'i` işleme almak için:
+```bash
+        git stash apply stash@{i}
+```
+Stash'i tekrar uygulamaya alsak da gerektiğinde tekrar kullanabilmek adına yine saklanmaya devam eder.
+![](pictures/gitstashapply.PNG)
+
+Var olan saklı Stash'lerin hepsini listeden temizlemek için:
+```bash
+        git stash clear
+```
+![](pictures/gitstashclear.PNG)
