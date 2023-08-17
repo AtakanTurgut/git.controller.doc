@@ -299,7 +299,7 @@ Detached HEAD :
 
 - Geçmiş bir `commit'e` dönüp ondan önceki commit'leri silmeden yeni commit oluşturarak aynı branch üzerinden devam edebilmek için:
 ```bash
-        git revert --hard donulecekCommitId
+        git revert donulecekCommitId
 ```
 ![](pictures/gitrevert1.PNG)
 ![](pictures/gitrevert2.PNG)
