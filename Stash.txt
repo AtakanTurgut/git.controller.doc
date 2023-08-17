@@ -1,9 +1,12 @@
 Stash durumu
 
 Bu durumu sakla.
+<<<<<<< HEAD
 değişiklik
 
 değişiklik 
 değişiklik
 değişiklik
+=======
+>>>>>>> parent of 423c831 (resetlenecek commit bir tekrar)
 değişiklik
