@@ -25,7 +25,7 @@ Yukarıdaki komutu kullanarak Git'in çalışıp çalışmadığını görebilir
 ```
 Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
 
-###  Git Bash Terminal Kullanımı 
+###  Git Bash - Terminal Kullanımı 
 - İçerisinde bulunduğumuz dizinde diğer klasörleri ve dokümanları gösterir.
 ```bash
         ls      
@@ -46,7 +46,7 @@ Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
 
 - Dizindeki diğer klasörlere ulaşabilmek için:
 ```bash
-        cd KlasorAdı
+        cd KlasorAdi
 ```
 ![](pictures/cd.PNG)
 
@@ -63,7 +63,7 @@ Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
 
 - Dizin üzerinde klasör oluşturmak için:
 ```bash
-        mkdir KlasorAdı
+        mkdir KlasorAdi
 ```
 ![](pictures/mkdir.PNG)
 
@@ -81,7 +81,7 @@ Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
 
 - Dizinden klasör kaldırmak için:
 ```bash
-        rm -rf KlasorAdı
+        rm -rf KlasorAdi
 ```
  ![](pictures/rm-rf.PNG)
 
@@ -149,7 +149,7 @@ Aksi halde git'i birkaç farklı aktif etme durumu çakışmalara sebep olabilir
 Her commit'in kendine ait bir işlem numarası olur. <br/>
 İşlem numarasına dönmek istersek o amaçla kullanılır.
 
-        HEAD -> MASTER
+        HEAD -> master
 
 Üzerinde bulunduğumun branch'ı gösterir
 ![](pictures/gitlog.PNG)
@@ -163,7 +163,7 @@ Her commit'in kendine ait bir işlem numarası olur. <br/>
 ```
 ![](pictures/gitbref.PNG)
 
-- Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
+Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
 - `git add` yapılmaması gerekir.
 - Öncelikle `.gitignore` isimli bir dosya oluşturmalıyız.
 ```bash
@@ -171,6 +171,38 @@ Her commit'in kendine ait bir işlem numarası olur. <br/>
 ```
 gitignore dosyası içerisine gizli kalmasını istediğimiz dosyayı uzantısıyla birlikte yazmalıyız.
 Gizli kalmasını istediğimiz dosya artık Git sorumluluğuna girmez.
+```cs
+        gitignore  ==>  dosya.uzantısı
+```
 ![](pictures/gitignore2.PNG)
 ![](pictures/gitignore1.PNG)
 
+#### branch'ler
+
+        HEAD -> master
+
+MASTER : Genellikle ana branch olarak kullanılır. Bir projenin bitmiş son halini temsil eder.
+HEAD -> branch : Bizim git içerisinde hangi konumda (branch) olduğumuzu gösterir. Genellikle son commit'i gösterir.
+- Var olan branch'leri görüntülemek için:
+```bash
+        git branch 
+```
+![](pictures/gitbranch.PNG)
+
+- Başka bir branch oluşturmak için:
+```bash
+        git branch BranchAdi 
+```
+![](pictures/gitbranchN.PNG)
+
+- Başka bir branch'a geçiş yapmak için:
+```bash
+        git switch BranchAdi 
+```
+![](pictures/gitswitch.PNG)
+
+- İki branch'ı birleştirmek için:
+```bash
+        git merge BirlesecekBranch
+```
+![](pictures/gitmerge.PNG)
