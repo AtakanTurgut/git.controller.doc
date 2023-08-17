@@ -271,4 +271,7 @@ Var olan saklı Stash'lerin hepsini listeden temizlemek için:
 ```bash
         git checkout commitID
 ```
-![](pictures/gitcheckout.PNG)
+Detached HEAD : 
+![](pictures/gitcheckout0.PNG)
+![](pictures/gitcheckout1.PNG)
+![](pictures/gitcheckout2.PNG)
