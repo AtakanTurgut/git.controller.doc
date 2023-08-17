@@ -269,9 +269,16 @@ Var olan saklı Stash'lerin hepsini listeden temizlemek için:
 ### Checkout
 - Commitlerimiz arasında gezinebilmek için:
 ```bash
-        git checkout commitID
+        git checkout commitId
 ```
 Detached HEAD : 
 ![](pictures/gitcheckout0.PNG)
 ![](pictures/gitcheckout1.PNG)
+![](pictures/gitcheckout3.PNG)
 ![](pictures/gitcheckout2.PNG)
+
+- Yapılacak işlemler yapıldıktan sonra ayrı bir branch oluşturulup devam edilebilir veya alınacak notlar vesayre alındıktan sonra  yapılabilecek en kolay haliyle çalışılan branch'a geri dönülebilir:
+```bash
+        git switch master
+```
+![](pictures/gitswitchmaster.PNG)
