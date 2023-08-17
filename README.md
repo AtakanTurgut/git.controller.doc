@@ -202,7 +202,15 @@ HEAD -> branch : Bizim git içerisinde hangi konumda (branch) olduğumuzu göste
 ![](pictures/gitswitch.PNG)
 
 - İki branch'ı birleştirmek için:
+Hangi branch'a merge'leyeceksek o branch üzerinde olmalıyız.
 ```bash
-        git merge BirlesecekBranch
+        git branch master
+        git merge BirlesirilecekBranch
+```
+```cs
+        master  <--  BirlesirilecekBranch
+        master branchine BirlesirilecekBranch eklenmiş olur.
 ```
 ![](pictures/gitmerge.PNG)
+
+- Fast Forwarding : Master branch üzerinde hiçbir değişiklik yapmadan başka bir branch ile ilerleyerek en son Master branch ile birleştirme (merge) işlemidir.
