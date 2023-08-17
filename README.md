@@ -133,3 +133,28 @@ Aksi halde git'i birkaç farklı aktif etme durumu çakışmalara sebep olabilir
 ```bash
         git add .
 ```
+ ![](pictures/gitadd..PNG)
+
+- Git'e eklenenlerin işlenebilmesi için:
+```bash
+        git commit -m "commit message"
+```
+- İşleme alma mesajı yapılanları açıklayıcı olmalıdır.
+ ![](pictures/gitcommit.PNG)
+
+- `git add <>` ve `git commit` tek tek yazmaktansa ikisini birden kullananiliriz.
+```bash
+        git commit -a "commit message"
+```
+
+ - İşlemleri görebilmek için:
+ ```bash
+        git log
+```
+Her commit'in kendine ait bir işlem numarası olur. <br/>
+İşlem numarasına dönmek istersek o amaçla kullanılır.
+
+        HEAD -> MASTER
+
+Üzerinde bulunduğumun branch'ı gösterir
+![](pictures/gitlog.PNG)
