@@ -284,8 +284,8 @@ Detached HEAD :
 ![](pictures/gitswitchmaster.PNG)
 
 ### Reset vs Revert
-- Geçmiş bir `commit'e` dönüm ondan önceki bütün komiyleri kaldırmak için:
+- Geçmiş bir `commit'e` dönüp ondan önceki bütün komiyleri kaldırmak için:
 ```bash
-        git switch master
+        git reset donulecekCommitId
 ```
-![](pictures/gitswitchmaster.PNG)
+![](pictures/gitreset.PNG)
