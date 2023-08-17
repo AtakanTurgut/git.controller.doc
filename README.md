@@ -213,11 +213,15 @@ Hangi branch'a merge'leyeceksek o branch üzerinde olmalıyız.
 ```
 ![](pictures/gitmerge.PNG)
 
-- Fast Forwarding : Master branch üzerinde hiçbir değişiklik yapmadan başka bir branch ile ilerleyerek en son Master branch ile birleştirme (merge) işlemidir.
+### Fast Forwarding 
+ Master branch üzerinde hiçbir değişiklik yapmadan başka bir branch ile ilerleyerek en son Master branch ile birleştirme (merge) işlemidir.
 
 ![](pictures/gitfastforward.PNG)
 
-- Merge Conflict : 
+###  Merge Conflict  
+Master branc içerisinde commit oluşturarak Merge Conflict işlemini çözebiliriz.
 ![](pictures/gitconflict1.PNG)
 ![](pictures/gitconflict2.PNG)
-Karar hangi işlemi tutacağımıza karar vermemizi ister.
+![](pictures/gitconflict3.PNG)
+![](pictures/gitconflict4.PNG)
+
