@@ -163,6 +163,11 @@ Her commit'in kendine ait bir işlem numarası olur. <br/>
 ```
 ![](pictures/gitbref.PNG)
 
+- Çalışma yaptığımız dosya branch'ler arasında geçiş yaparken bozulur ise aşağıdaki komutu kullanarak düzeltebiliriz:
+```bash
+        git restore dosya.uzantıs
+```
+
 Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
 - `git add` yapılmaması gerekir.
 - Öncelikle `.gitignore` isimli bir dosya oluşturmalıyız.
