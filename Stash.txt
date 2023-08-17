@@ -2,3 +2,6 @@ Stash durumu
 
 Bu durumu sakla.
 değişiklik
+
+değişiklik 
+değişiklik
