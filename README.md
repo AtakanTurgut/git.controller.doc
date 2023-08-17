@@ -1,5 +1,5 @@
 ## Git & GitHub : Versiyon Kontrolü
-- Git : Versiyon Kontrol Sistemidir.
+Git : Versiyon Kontrol Sistemidir.
 
 ### Windows Git Kurulum
 Windows'a Git'i kurmak için [[kaynak]](https://git-scm.com/download/win).       <br/>
@@ -26,6 +26,8 @@ Yukarıdaki komutu kullanarak Git'in çalışıp çalışmadığını görebilir
 Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
 
 ###  Git Bash - Terminal Kullanımı 
+Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
+
 - İçerisinde bulunduğumuz dizinde diğer klasörleri ve dokümanları gösterir.
 ```bash
         ls      
@@ -163,11 +165,6 @@ Her commit'in kendine ait bir işlem numarası olur. <br/>
 ```
 ![](pictures/gitbref.PNG)
 
-- Çalışma yaptığımız dosya branch'ler arasında geçiş yaparken bozulur ise aşağıdaki komutu kullanarak düzeltebiliriz:
-```bash
-        git restore dosya.uzantıs
-```
-
 Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
 - `git add` yapılmaması gerekir.
 - Öncelikle `.gitignore` isimli bir dosya oluşturmalıyız.
@@ -182,7 +179,7 @@ Gizli kalmasını istediğimiz dosya artık Git sorumluluğuna girmez.
 ![](pictures/gitignore2.PNG)
 ![](pictures/gitignore1.PNG)
 
-#### branch'ler
+### Branch İşlemleri
 
         HEAD -> master
 
@@ -262,3 +259,15 @@ Var olan saklı Stash'lerin hepsini listeden temizlemek için:
         git stash clear
 ```
 ![](pictures/gitstashclear.PNG)
+
+- Çalışma yaptığımız dosya commit attıktan sonra bir şekilde bozulur veya sıkkıntı çıkartırsa ise eski commit'li haline döndürmek için aşağıdaki komutu kullanarak düzeltmemizi yapabiliriz:
+```bash
+        git restore dosya.uzantıs
+```
+![](pictures/gitrestore.PNG)
+
+### Checkout
+- Commitlerimiz arasında gezinebilmek için:
+```bash
+        git checkout
+```
