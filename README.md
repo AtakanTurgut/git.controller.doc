@@ -282,3 +282,10 @@ Detached HEAD :
         git switch master
 ```
 ![](pictures/gitswitchmaster.PNG)
+
+### Reset vs Revert
+- Geçmiş bir `commit'e` dönüm ondan önceki bütün komiyleri kaldırmak için:
+```bash
+        git switch master
+```
+![](pictures/gitswitchmaster.PNG)
