@@ -372,3 +372,13 @@ Detached HEAD :
         git diff ilkBranchAdi ikinciBranchAdi 
 ```
 ![](pictures/gitdiff5.PNG)
+
+- `git rebase` hem log temizlemek için hem de tarihi tekrar yazmak için kullanılabilir.
+`master branch` içerisindeki değişiklikleri kendi branch'inize taşımak isterseniz de kullanabilirsiniz.
+Fazladan `merge commit` işlemi yapılmamış olur ve loglar temizlenmiş ve sıralanmış olur.
+!! `master branch` üzerinde başka bir ekip arkadaşınızın çalışıyor olmaması gerekir.  
+!! Önemli olan `master` branch dışında başka bir branch'de bulunuyor olmaktır.
+```bash
+        git rebase master
+```
+![](pictures/gitrebase.PNG)
