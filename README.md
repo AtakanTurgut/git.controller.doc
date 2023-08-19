@@ -1,4 +1,4 @@
-## Git & GitHub : Versiyon Kontrolü
+# Git & GitHub : Versiyon Kontrolü
 Git : Versiyon Kontrol Sistemidir.
 
 ### [Windows Git Kurulum](#)
