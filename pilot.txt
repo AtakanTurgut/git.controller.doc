@@ -1,0 +1,5 @@
+deneme yazısı
+deneme yazısı
+silinecek satır.
+
+branchları birleştir

@@ -418,6 +418,7 @@ Diğer kullanıcılar görmesin sadece ben görebileyim derseniz de `Private` se
         git branch -r
 ```
 ![](pictures/gitbranchR.PNG)
+![](pictures/gitbranch-.PNG)
 
 Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapmamızı sağlayabilir. 
 - GitHub'daki değişiklikleri kendi `Local Repo`'muza taşımak için:
@@ -425,3 +426,17 @@ Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapma
         git fetch origin BranchAdi
 ```
 
+- Github'daki değişiklikleri eklemek ve ayrı bir branch oluşturmadan kendi branch'imizin üzerine değişiklikleri kaydetmek için:
+
+        git pull = git fetch + git merge
+
+```bash
+        git pull 
+```
+
+- Başka birisinin GitHub'ındaki Repo'yu kendi Local Repo'muza ekleyebilmek için:
+
+```bash
+        git clone https://github.com/AtakanTurgut/DataStructures_Advanced
+```
+![](pictures/gitclone.PNG)
