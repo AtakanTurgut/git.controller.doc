@@ -1,7 +1,7 @@
 ## Git & GitHub : Versiyon Kontrolü
 Git : Versiyon Kontrol Sistemidir.
 
-### Windows Git Kurulum
+### [Windows Git Kurulum](#)
 Windows'a Git'i kurmak için [[kaynak]](https://git-scm.com/download/win).       <br/>
 Hazır ayarlar kullanılarak `Next` butonuna tıklayıp geçiyoruz. En son `Install` seçeneğine tıklayarak yüklemeyi başlatıp yüklendikten sonra da `Finish` butonuna tıklayarak kapatıyoruz.
 ```bash
@@ -11,7 +11,7 @@ Yükleme işlemi başarıyla sona erdikten sonra yukarıdaki komutu kullanarak G
 Komutları yükleme sonrası `Git Bash` komut iştemcisine yazıyoruz.
 ![](pictures/gitIm1.PNG)
 
-### Mac ve Linux Kurulumu       
+### [Mac ve Linux Kurulumu](#)
 Mac ve Linux sistemlerde hali hazırda Git kurulu olur.  <br/>
 Eğer sistemde yüklü değilse ve yüklememiz gerekirse [[kaynak]](https://git-scm.com/download).   <br/>
 Binary installer'ı kullanarak Git yüklenebilir.
@@ -25,7 +25,7 @@ Yukarıdaki komutu kullanarak Git'in çalışıp çalışmadığını görebilir
 ```
 Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
 
-###  Git Bash - Terminal Kullanımı 
+### [Git Bash - Terminal Kullanımı](#)
 Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
 
 - İçerisinde bulunduğumuz dizinde diğer klasörleri ve dokümanları gösterir.
@@ -102,7 +102,7 @@ Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
 
  ![](pictures/TerminalList.PNG)
 
-### Kullanıcı Adı ve Email Girmek
+### [Kullanıcı Adı ve Email Girmek](#)
 - Git sistemine kullanıcı adımızı ve email bilgilerimizi kaydetmek için:
 
 ```bash
@@ -122,7 +122,7 @@ Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
 ```
  ![](pictures/configUserEmail.PNG)
 
-### Git Temel Komutları
+### [Git Temel Komutları](#)
 ```cs
         Çalşıma Klasörü      =>      Index - Staging       =>       Local Repository
                           git add                      git commit
@@ -205,7 +205,7 @@ Gizli kalmasını istediğimiz dosya artık Git sorumluluğuna girmez.
 ![](pictures/gitignore2.PNG)
 ![](pictures/gitignore1.PNG)
 
-### Branch İşlemleri
+### [Branch İşlemleri](#)
 
         HEAD -> master
 
@@ -245,19 +245,19 @@ Hangi branch'a merge'leyeceksek o branch üzerinde olmalıyız.
 ```
 ![](pictures/gitmerge.PNG)
 
-### Fast Forwarding 
+### [Fast Forwarding](#)
  Master branch üzerinde hiçbir değişiklik yapmadan başka bir branch ile ilerleyerek en son Master branch ile birleştirme (merge) işlemidir.
 
 ![](pictures/gitfastforward.PNG)
 
-###  Merge Conflict  
+### [Merge Conflict](#)
 Master branc içerisinde commit oluşturarak Merge Conflict işlemini çözebiliriz.
 ![](pictures/gitconflict1.PNG)
 ![](pictures/gitconflict2.PNG)
 ![](pictures/gitconflict3.PNG)
 ![](pictures/gitconflict4.PNG)
 
-### Stash
+### [Stash](#)
 Başka bir branch'da oluşturulan bir dosya commit işlemi yapılmadan git'e eklendiyse (git add <>) ve ardından tekrar başka bir branch'e geçildiyse diğer branch'de oluşturulan dosya da geçilen branch'e taşınır.  <br/>
 Bu durumu önlemek için kendi branch'imiz üzerindeki değişiklikleri saklayıp tutmamız gerekir. Bunun aşağıdaki kodu kullanırız:
 
@@ -302,7 +302,7 @@ Stash'i tekrar uygulamaya alsak da gerektiğinde tekrar kullanabilmek adına yin
 ```
 ![](pictures/gitrestore.PNG)
 
-### Checkout
+### [Checkout](#)
 - Commitlerimiz arasında gezinebilmek için:
 
 ```bash
@@ -321,7 +321,7 @@ Detached HEAD :
 ```
 ![](pictures/gitswitchmaster.PNG)
 
-### Reset vs Revert
+### [Reset vs Revert](#)
 - Geçmiş bir `commit'e` dönüp ondan önceki bütün commit'leri kaldırmak için - commit'lerdeki değişiklikler silinmez:
 
 ```bash
@@ -383,7 +383,7 @@ Fazladan `merge commit` işlemi yapılmamış olur ve loglar temizlenmiş ve sı
 ```
 ![](pictures/gitrebase.PNG)
 
-### GitHub
+### [GitHub](#)
 GitHub, sürüm kontrol sistemi olarak Git kullanan yazılım geliştirme projeleri için web tabanlı bir depolama servisidir. <br/>
 Yaptığınız dokümantasyonları Git komutlarını kullanarak paylaşımlı bir şekilde sonradan ulaşabilmenizi sağlayarak depolanızı sağlar. <br/>
 GitHub'a yüklemeden önce GitHub'da `Repositories > New` şeklinde veya arama çubuğu yanındaki `+` simgesine tıklayarak `New repository` seçeneğine tıklayarak yeni bir `Repository` oluşturmamız gerekir. Repo'nuza bir isim (Repository name*) ve isteğe bağlı olarak bir açıklama (Description (optional)) ekleyebilirsiniz. <br/>
