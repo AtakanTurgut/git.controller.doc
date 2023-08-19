@@ -11,13 +11,13 @@ Yükleme işlemi başarıyla sona erdikten sonra yukarıdaki komutu kullanarak G
 Komutları yükleme sonrası `Git Bash` komut iştemcisine yazıyoruz.
 ![](pictures/gitIm1.PNG)
 
-### Mac ve Linux Kurulumu
+### Mac ve Linux Kurulumu       
 Mac ve Linux sistemlerde hali hazırda Git kurulu olur.  <br/>
 Eğer sistemde yüklü değilse ve yüklememiz gerekirse [[kaynak]](https://git-scm.com/download).   <br/>
 Binary installer'ı kullanarak Git yüklenebilir.
 ```bash
-        git --version
-```
+        git --version 
+```     
 
 Yukarıdaki komutu kullanarak Git'in çalışıp çalışmadığını görebiliriz.
 ```bash
