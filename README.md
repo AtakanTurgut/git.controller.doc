@@ -280,7 +280,7 @@ Bu durumu önlemek için kendi branch'imiz üzerindeki değişiklikleri saklayı
 ```
 ![](pictures/gitstashlist.PNG)
 
-- İstediğimiz `Stash'i` işleme almak için:
+- İstediğimiz `Stash`'i işleme almak için:
 
 ```bash
         git stash apply stash@{i}
@@ -382,3 +382,46 @@ Fazladan `merge commit` işlemi yapılmamış olur ve loglar temizlenmiş ve sı
         git rebase master
 ```
 ![](pictures/gitrebase.PNG)
+
+### GitHub
+GitHub, sürüm kontrol sistemi olarak Git kullanan yazılım geliştirme projeleri için web tabanlı bir depolama servisidir. <br/>
+Yaptığınız dokümantasyonları Git komutlarını kullanarak paylaşımlı bir şekilde sonradan ulaşabilmenizi sağlayarak depolanızı sağlar. <br/>
+GitHub'a yüklemeden önce GitHub'da `Repositories > New` şeklinde veya arama çubuğu yanındaki `+` simgesine tıklayarak `New repository` seçeneğine tıklayarak yeni bir `Repository` oluşturmamız gerekir. Repo'nuza bir isim (Repository name*) ve isteğe bağlı olarak bir açıklama (Description (optional)) ekleyebilirsiniz. <br/>
+Diğer kullanıcıların Repo'nuzu görmesini istiyorsanız `Public` seçeneği seçili olmalıdır. <br/>
+Diğer kullanıcılar görmesin sadece ben görebileyim derseniz de `Private` seçeneğini seçebilirsiniz. <br/>
+
+- GitHub'ımıza uzaktan bağlanmasını sağlamak için:
+- `origin` içerisinde Repo'nun URL'ini tutar.
+
+```bash
+        git remote add origin https://github.com/UserName/GitRepoName.git
+```
+![](pictures/gitremote.PNG)
+
+- Uzak Repo'muza yapılanları gönderebilmek için:
+!! Üzerinde bulunduğumuz branch `main branch` (ana branch'ınız hangisiyse o branch) olmalı ve o ana branch'ımızda işlemleri gerçekleştirmeliyiz.  
+!! Bu işlemleri yapmadan önce GitHub hesabımızın Git üzerinden oturum açmış olması gerekir.
+`-u`, `origin` ve `main`'a push edeceğini tutar.
+```bash
+        git push -u origin main
+
+        git push origin main
+        git push                        -> origin -> main
+```
+![](pictures/gitpush1.PNG)
+![](pictures/gitpush2.PNG)
+![](pictures/gitpush3.PNG)
+
+- `Remote branch`'leri görüntülemek için:
+
+```bash
+        git branch -r
+```
+![](pictures/gitbranchR.PNG)
+
+Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapmamızı sağlayabilir. 
+- GitHub'daki değişiklikleri kendi `Local Repo`'muza taşımak için:
+```bash
+        git fetch origin BranchAdi
+```
+
