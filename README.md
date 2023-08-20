@@ -2,7 +2,7 @@
 Git : It is a Version Control System.
 
 ### [Git Installation for Windows](#)
-[[Source]](https://git-scm.com/download/win) for installing Git on Windows..       <br/>
+[[Source]](https://git-scm.com/download/win) for installing Git on Windows.       <br/>
 Using the presets, we click the `Next` button and pass. Lastly, we start the installation by clicking on the 'Install' option, and after installing it, we close it by clicking the 'Finish' button.
 ```bash
         git --version
