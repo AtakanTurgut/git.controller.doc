@@ -3,27 +3,27 @@ Git : It is a Version Control System.
 
 ### [Git Installation for Windows](#)
 [[Source]](https://git-scm.com/download/win) for installing Git on Windows.       <br/>
-Using the presets, we click the `Next` button and pass. Lastly, we start the installation by clicking on the `Install` option, and after installing it, we close it by clicking the `Finish` button.
+You can skip using the presets by clicking the 'Next' button. Finally, you can start the installation by pressing the 'Install' button and after the installation you can close the installation with the 'Finish' button.
 ```bash
         git --version
 ```
-After successfully completing the installation, we can check the Git version using the code above.  <br/>
-We write the commands in the `Git Bash` command processor after installation.
+After successfully completing the installation, you can check the Git version using the code above.  <br/>
+After installation you can type commands in the `Git Bash` command processor.
 ![](pictures/gitIm1.PNG)
 
 ### [Git Installation for Mac and Linux](#)
 Mac and Linux systems already have Git installed. <br/>
-If it is not installed on the system and we need to install it [[source]](https://git-scm.com/download).   <br/>
+If it is not installed on the system and you need to install it [[source]](https://git-scm.com/download).   <br/>
 Git can be installed using the Binary Installer.
 ```bash
         git --version 
 ```     
 
-Using the above command we can see if Git is running or not.
+Using the above command you can see if Git is running or not.
 ```bash
         git
 ```
-If Git is installed, we can access Git Documentation by entering the above command.
+If Git is installed, you can access Git Documentation by entering the above command.
 
 ### [Git Bash - Terminal Usage](#)
 Git commands for Windows, Mac and Linux are no different, they are the same.
@@ -35,14 +35,14 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 ```
 ![](pictures/ls.PNG)
 
-- If we want to see the hidden files in the folder:
+- If you want to see the hidden files in the folder:
 
 ```bash
         ls -la      
 ```
 ![](pictures/ls-la.PNG)
 
-- To review the directory we are in:
+- To review the directory you are in:
 
 ```bash
         pwd
@@ -97,7 +97,7 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 ```
  ![](pictures/rm-rf.PNG)
 
-- If we come across a long list that continues, we can move it up or down with the `arrow keys` from the keyboard.
+- If you come across a long list that continues, you can move it up or down with the `arrow keys` from the keyboard.
 - To exit the list, `'q'` keys must be pressed on the keyboard.
 
  ![](pictures/TerminalList.PNG)
@@ -190,14 +190,14 @@ Shows the current branch.
 ```
 ![](pictures/gitbref.PNG)
 
-We don't want to save the files we don't want to share in `Local Repo`.
+We don't want to save the files you don't want to share in `Local Repo`.
 - `git add` needs to be done..
-- First we need to create a file named `.gitignore`.
+- First you need to create a file named `.gitignore`.
 
 ```bash
         touch .gitignore
 ```
-gitignore file, we must write the file that we want to be hidden with its extension.
+gitignore file, you must write the file that you want to be hidden with its extension.
 Incognito file is no longer protected by Git.
 ```c
         .gitignore  ==>  file.extention
@@ -210,7 +210,7 @@ Incognito file is no longer protected by Git.
         HEAD -> master
 
 MASTER : Usually used as main branch. Represents the finished final version of a project.
-HEAD -> Branch : It shows in which places (branch) it is in our git. It usually shows the last commit.
+HEAD -> Branch : It shows in which places (branch) it is in your git. It usually shows the last commit.
 - To view available branches:
 
 ```bash
@@ -233,7 +233,7 @@ HEAD -> Branch : It shows in which places (branch) it is in our git. It usually 
 ![](pictures/gitswitch.PNG)
 
 - To merge two branches:
-We must be on the branch we will merge with.
+you must be on the branch you will merge with.
 
 ```bash
         git branch master
@@ -251,7 +251,7 @@ It is the process of merging (merge) with the last Master branch by advancing wi
 ![](pictures/gitfastforward.PNG)
 
 ### [Merge Conflict](#)
-We can resolve Merge Conflict transactions in commit in Master Branch.
+You can resolve Merge Conflict transactions in commit in Master Branch.
 ![](pictures/gitconflict1.PNG)
 ![](pictures/gitconflict2.PNG)
 ![](pictures/gitconflict3.PNG)
@@ -259,14 +259,14 @@ We can resolve Merge Conflict transactions in commit in Master Branch.
 
 ### [Stash](#)
 If a file that occurred in another branch was added to git without committing (git add <>) and then moved to another branch again, the file that occurred in the other branch should also be moved to the previous branch.  <br/>
-In order to prevent this situation, we need to keep the cards hidden in our branch. We use the following code:
+In order to prevent this situation, you need to keep the cards hidden in your branch. You use the following code:
 
 ```bash
         git stash 
 ```
 ![](pictures/gitstash.PNG)
 
-- After completing the work in the other branch, we can access the commands we have stored in our own branch with the following code.
+- After completing the work in the other branch, you can access the commands you have stored in your own branch with the following code.
 
 ```bash
         git stash pop
@@ -280,12 +280,12 @@ In order to prevent this situation, we need to keep the cards hidden in our bran
 ```
 ![](pictures/gitstashlist.PNG)
 
-- To process the `stash` we want:
+- To process the `stash` you want:
 
 ```bash
         git stash apply stash@{i}
 ```
-Even if we hold Stash again, it will still be stored for reuse.
+Even if you hold Stash again, it will still be stored for reuse.
 ![](pictures/gitstashapply.PNG)
 
 - To clear all existing stored Stashes from the list:
@@ -295,7 +295,7 @@ Even if we hold Stash again, it will still be stored for reuse.
 ```
 ![](pictures/gitstashclear.PNG)
 
-- If the file we are working with is somehow corrupted or causing trouble after committing, we can fix it by using the following command to revert it to its previous commit:
+- If the file you are working with is somehow corrupted or causing trouble after committing, you can fix it by using the following command to revert it to its previous commit:
 
 ```bash
         git restore file.extention
@@ -303,7 +303,7 @@ Even if we hold Stash again, it will still be stored for reuse.
 ![](pictures/gitrestore.PNG)
 
 ### [Checkout](#)
-- To navigate between our committees:
+- To navigate between your committees:
 
 ```bash
         git checkout reachedCommitId
@@ -386,7 +386,7 @@ No extra `merge commit` will be done and the logs will be cleaned and sorted.
 ### [GitHub](#)
 GitHub is a web-based storage service for software development projects that use Git as their version control system. <br/>
 It allows you to store the documentation you have made by using Git commands, allowing you to access them in a shared way later. <br/>
-Before uploading to GitHub, we need to create a `New repository` in GitHub by clicking `Repositories > New` or by clicking the `+` icon next to the search bar and clicking `New repository`. You can add a name (Repository name*) and optionally a description (Description (optional)) to your repo. <br/>
+Before uploading to GitHub, you need to create a `New repository` in GitHub by clicking `Repositories > New` or by clicking the `+` icon next to the search bar and clicking `New repository`. You can add a name (Repository name*) and optionally a description (Description (optional)) to your repo. <br/>
 The `Public` option must be selected if you want other users to see your Repo. <br/>
 You can choose the `Private` option if you want only me to see it and not other users. <br/>
 
@@ -398,8 +398,8 @@ You can choose the `Private` option if you want only me to see it and not other 
 ```
 ![](pictures/gitremote.PNG)
 
-- To be able to post commits to our Remote Repo:
-!! On the branch, the branch should be the `main branch` (whichever your main branch is) and we should perform the operations in that main branch.      <br/>
+- To be able to post commits to your Remote Repo:
+!! On the branch, the branch should be the `main branch` (whichever your main branch is) and you should perform the operations in that main branch.      <br/>
 !! Your GitHub account must be signed in to Git before doing these operations.  <br/>
 `-u` holds that it will push to `origin` and `main`.    
 ```bash
@@ -421,13 +421,13 @@ You can choose the `Private` option if you want only me to see it and not other 
 ![](pictures/gitbranch-.PNG)
 
 Pull Request : GitHub can have us `merge` if there is no conflict between branches.
-- To move changes from GitHub to our `Local Repository`:
+- To move changes from GitHub to your `Local Repository`:
 
 ```bash
         git fetch origin BranchName
 ```
 
-- To add changes from Github and save changes over our own branch without creating a separate branch:
+- To add changes from Github and save changes over your own branch without creating a separate branch:
 
         git pull = git fetch + git merge
 
@@ -442,8 +442,8 @@ Pull Request : GitHub can have us `merge` if there is no conflict between branch
 ```
 ![](pictures/gitclone.PNG)
 
-- By Forking, we can add other users Repos as Repo to our own account.
-- Then we can see it in our `Local Repo` using `git clone` command from our Repo.
+- By Forking, you can add other users Repos as Repo to your own account.
+- Then you can see it in your `Local Repo` using `git clone` command from your Repo.
 
 To add developers to a Private Repo:
 
