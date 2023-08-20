@@ -3,7 +3,7 @@ Git : It is a Version Control System.
 
 ### [Git Installation for Windows](#)
 [[Source]](https://git-scm.com/download/win) for installing Git on Windows.       <br/>
-You can skip using the presets by clicking the 'Next' button. Finally, you can start the installation by pressing the 'Install' button and after the installation you can close the installation with the 'Finish' button.
+You can skip using the presets by clicking the `Next` button. Finally, you can start the installation by pressing the `Install` button and after the installation you can close the installation with the `Finish` button.
 ```bash
         git --version
 ```
@@ -78,16 +78,16 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 
 - To create a file in the directory:
 
- ```bash
+```bash
         touch file.extention
- ```
+```
  ![](pictures/touch.PNG)
 
  - To remove files from the directory:
 
 ```bash
         rm file.extention
- ```
+```
  ![](pictures/rm.PNG)
 
 - To remove a folder from the directory:
@@ -139,7 +139,7 @@ Otherwise, several different activations of git may cause conflicts.
 
  - To enable Git in the folder:     runs as master or master branch.
 
- ```bash
+```bash
         git init
 ```
  ![](pictures/gitinit.PNG)
@@ -169,7 +169,7 @@ Otherwise, several different activations of git may cause conflicts.
 
  - To view transactions:
 
- ```bash
+```bash
         git log
 ```
 Each commit has its own transaction number. <br/>
