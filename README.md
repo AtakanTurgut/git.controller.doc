@@ -3,7 +3,7 @@ Git : Versiyon Kontrol Sistemidir.
 
 ### [Windows Git Kurulum](#)
 Windows'a Git'i kurmak için [[kaynak]](https://git-scm.com/download/win).       <br/>
-Hazır ayarlar kullanılarak `Next` butonuna tıklayıp geçebilrsiniz. En son `Install` seçeneğine tıklayarak yüklemeyi başlatıp yüklendikten sonra da `Finish` butonuna tıklayarak kapatabilirsiniz.
+Hazır ayarlar kullanılarak `Next` butonuna tıklayıp geçebilirsiniz. En son `Install` seçeneğine tıklayarak yüklemeyi başlatıp yüklendikten sonra da `Finish` butonuna tıklayarak kapatabilirsiniz.
 ```bash
         git --version
 ```
