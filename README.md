@@ -447,4 +447,4 @@ Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapma
 
 Private bir Repo'ya geliştirici ekleyebilmek için:
 
-        RepoName       ->      Collaborators        ->         Add peope
+        RepoName       ->      Collaborators        ->         Add people
