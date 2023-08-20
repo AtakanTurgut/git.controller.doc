@@ -1,4 +1,4 @@
-# Git & GitHub : [Version Control](README.md)
+# Git & GitHub : Version Control
 Git : It is a Version Control System.
 
 ### [Git Installation for Windows](#)
