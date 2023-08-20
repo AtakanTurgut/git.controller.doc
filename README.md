@@ -42,7 +42,7 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 ```
 ![](pictures/ls-la.PNG)
 
-- Bulunduğumuz dizini bulmak için:
+- To review the directory we are in:
 
 ```bash
         pwd
@@ -52,7 +52,7 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 - To access other folders in the directory:
 
 ```bash
-        cd KlasorAdi
+        cd FileName
 ```
 ![](pictures/cd.PNG)
 
@@ -72,28 +72,28 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 - To create a folder in a directory:
 
 ```bash
-        mkdir KlasorAdi
+        mkdir FileName
 ```
 ![](pictures/mkdir.PNG)
 
 - To create a file in the directory:
 
  ```bash
-        touch dosya.uzantısı
+        touch file.extention
  ```
  ![](pictures/touch.PNG)
 
  - To remove files from the directory:
 
 ```bash
-        rm dosya.uzantısı
+        rm file.extention
  ```
  ![](pictures/rm.PNG)
 
 - To remove a folder from the directory:
 
 ```bash
-        rm -rf KlasorAdi
+        rm -rf FileName
 ```
  ![](pictures/rm-rf.PNG)
 
@@ -147,7 +147,7 @@ Otherwise, several different activations of git may cause conflicts.
  - To add files or folders to Git:
 
 ```bash
-        git add dosya.uzantısı
+        git add file.extention
 ```
  ![](pictures/gitadd.PNG)
 
@@ -199,114 +199,114 @@ We don't want to save the files we don't want to share in `Local Repo`.
 ```
 gitignore file, we must write the file that we want to be hidden with its extension.
 Incognito file is no longer protected by Git.
-```cs
-        gitignore  ==>  file.extention
+```c
+        .gitignore  ==>  file.extention
 ```
 ![](pictures/gitignore2.PNG)
 ![](pictures/gitignore1.PNG)
 
-### [Branch İşlemleri](#)
+### [Branch Transactions](#)
 
         HEAD -> master
 
-MASTER : Genellikle ana branch olarak kullanılır. Bir projenin bitmiş son halini temsil eder.
-HEAD -> branch : Bizim git içerisinde hangi konumda (branch) olduğumuzu gösterir. Genellikle son commit'i gösterir.
-- Var olan branch'leri görüntülemek için:
+MASTER : Usually used as main branch. Represents the finished final version of a project.
+HEAD -> Branch : It shows in which places (branch) it is in our git. It usually shows the last commit.
+- To view available branches:
 
 ```bash
         git branch 
 ```
 ![](pictures/gitbranch.PNG)
 
-- Başka bir branch oluşturmak için:
+- To create a new branch:
 
 ```bash
-        git branch BranchAdi 
+        git branch BranchName 
 ```
 ![](pictures/gitbranchN.PNG)
 
-- Başka bir branch'a geçiş yapmak için:
+- To switch to another branch:
 
 ```bash
-        git switch BranchAdi 
+        git switch BranchName 
 ```
 ![](pictures/gitswitch.PNG)
 
-- İki branch'ı birleştirmek için:
-Hangi branch'a merge'leyeceksek o branch üzerinde olmalıyız.
+- To merge two branches:
+We must be on the branch we will merge with.
 
 ```bash
         git branch master
-        git merge BirlesirilecekBranch
+        git merge BranchtoMerge
 ```
-```cs
-        master  <--  BirlesirilecekBranch
-        master branchine BirlesirilecekBranch eklenmiş olur.
+```c
+        master  <--  BranchtoMerge
+        BranchtoMerge is added to the master Branch.
 ```
 ![](pictures/gitmerge.PNG)
 
 ### [Fast Forwarding](#)
- Master branch üzerinde hiçbir değişiklik yapmadan başka bir branch ile ilerleyerek en son Master branch ile birleştirme (merge) işlemidir.
+It is the process of merging (merge) with the last Master branch by advancing with another branch without making any changes on the Master branch.
 
 ![](pictures/gitfastforward.PNG)
 
 ### [Merge Conflict](#)
-Master branc içerisinde commit oluşturarak Merge Conflict işlemini çözebiliriz.
+We can resolve Merge Conflict transactions in commit in Master Branch.
 ![](pictures/gitconflict1.PNG)
 ![](pictures/gitconflict2.PNG)
 ![](pictures/gitconflict3.PNG)
 ![](pictures/gitconflict4.PNG)
 
 ### [Stash](#)
-Başka bir branch'da oluşturulan bir dosya commit işlemi yapılmadan git'e eklendiyse (git add <>) ve ardından tekrar başka bir branch'e geçildiyse diğer branch'de oluşturulan dosya da geçilen branch'e taşınır.  <br/>
-Bu durumu önlemek için kendi branch'imiz üzerindeki değişiklikleri saklayıp tutmamız gerekir. Bunun aşağıdaki kodu kullanırız:
+If a file that occurred in another branch was added to git without committing (git add <>) and then moved to another branch again, the file that occurred in the other branch should also be moved to the previous branch.  <br/>
+In order to prevent this situation, we need to keep the cards hidden in our branch. We use the following code:
 
 ```bash
         git stash 
 ```
 ![](pictures/gitstash.PNG)
 
-- Diğer branch üzerinde işlerimizi hallettikten sonra, kendi branch'imizde sakladığımız komutları aşağıdaki kod yardımıyla gerçekleştiririz.
+- After completing the work in the other branch, we can access the commands we have stored in our own branch with the following code.
 
 ```bash
         git stash pop
 ```
 ![](pictures/gitstashpop.PNG)
 
-- Saklanan verilerin listesini görebilmek için:
+- To view the stored data:
 
 ```bash
         git stash list
 ```
 ![](pictures/gitstashlist.PNG)
 
-- İstediğimiz `Stash`'i işleme almak için:
+- To process the `stash` we want:
 
 ```bash
         git stash apply stash@{i}
 ```
-Stash'i tekrar uygulamaya alsak da gerektiğinde tekrar kullanabilmek adına yine saklanmaya devam eder.
+Even if we hold Stash again, it will still be stored for reuse.
 ![](pictures/gitstashapply.PNG)
 
-- Var olan saklı Stash'lerin hepsini listeden temizlemek için:
+- To clear all existing stored Stashes from the list:
 
 ```bash
         git stash clear
 ```
 ![](pictures/gitstashclear.PNG)
 
-- Çalışma yaptığımız dosya commit attıktan sonra bir şekilde bozulur veya sıkkıntı çıkartırsa ise eski commit'li haline döndürmek için aşağıdaki komutu kullanarak düzeltmemizi yapabiliriz:
+- If the file we are working with is somehow corrupted or causing trouble after committing, we can fix it by using the following command to revert it to its previous commit:
 
 ```bash
-        git restore dosya.uzantıs
+        git restore file.extention
 ```
 ![](pictures/gitrestore.PNG)
 
 ### [Checkout](#)
-- Commitlerimiz arasında gezinebilmek için:
+- To navigate between our committees:
 
 ```bash
-        git checkout commitId
+        git checkout reachedCommitId
 ```
 Detached HEAD : 
 ![](pictures/gitcheckout0.PNG)
@@ -314,39 +314,39 @@ Detached HEAD :
 ![](pictures/gitcheckout3.PNG)
 ![](pictures/gitcheckout2.PNG)
 
-- Yapılacak işlemler yapıldıktan sonra ayrı bir branch oluşturulup devam edilebilir veya alınacak notlar vesayre alındıktan sonra  yapılabilecek en kolay haliyle çalışılan branch'a geri dönülebilir:
+- After executing the operations, a separate branch can be created and continued, or the easiest way to return to the working branch after the notes to be taken are taken:
 
 ```bash
         git switch master
 ```
 ![](pictures/gitswitchmaster.PNG)
 
-### [Reset vs Revert](#)
-- Geçmiş bir `commit'e` dönüp ondan önceki bütün commit'leri kaldırmak için - commit'lerdeki değişiklikler silinmez:
+### [Reset and Revert](#)
+- Switch to a past commit, removing all previous commits - Changes in commits are not deleted:
 
 ```bash
-        git reset donulecekCommitId
+        git reset reachedCommitId
 ```
 ![](pictures/gitreset.PNG)
 
-- Geçmiş bir `commit'e` dönüp ondan önceki bütün commit'leri ve yapılan işlemleri kaldırmak için:
+- To go back to a past commit and remove all previous commits and transactions:
 
 ```bash
-        git reset --hard donulecekCommitId
+        git reset --hard reachedCommitId
 ```
 ![](pictures/gitresethard1.PNG)
 ![](pictures/gitresethard2.PNG)
 
-- Geçmiş bir `commit'e` dönüp ondan önceki commit'leri silmeden yeni commit oluşturarak aynı branch üzerinden devam edebilmek için:
+- To go back to a past commit and create a new commit without deleting previous commits, you can continue on the same branch:
 
 ```bash
-        git revert donulecekCommitId
+        git revert reachedCommitId
 ```
 ![](pictures/gitrevert1.PNG)
 ![](pictures/gitrevert2.PNG)
 
-İki dosya arasındaki değişiklikleri veya oluşan farklılıkları görebilmemiz `git diff` komutuyla sağlarız
-- Son `commit` veya başka bir `commit` ile arasında ne gibi değişiklikler var bunları görebilmek için:
+With the `git diff` certificate you can protect or see the differences between two files.
+- To see what changes there are with the last `commit` or another `commit`:
 
 ```bash
         git diff
@@ -354,54 +354,54 @@ Detached HEAD :
 ![](pictures/gitdiff1.PNG)
 
 ```bash
-        git diff commitId
+        git diff reachedCommitId
 ```
 ![](pictures/gitdiff3.PNG)
 ![](pictures/gitdiff4.PNG)
 
-- Üzerinde bulunduğumuz `branch` ile diğer `branch` arasında ne gibi değişiklikler var bunları görebilmek için:
+- To see what kind of changes there are between transition `branch` and other `branch`:
 
 ```bash
-        git diff BranchAdi
+        git diff BranchName
 ```
 ![](pictures/gitdiff2.PNG)
 
-- İki farklı `branch` arasında ne gibi değişiklikler var bunları görebilmek için:
+- To see what kind of changes there are between two different `branch`:
 
 ```bash
-        git diff ilkBranchAdi ikinciBranchAdi 
+        git diff firstBranchName secondBranchName 
 ```
 ![](pictures/gitdiff5.PNG)
 
-- `git rebase` hem log temizlemek için hem de tarihi tekrar yazmak için kullanılabilir.
-`master branch` içerisindeki değişiklikleri kendi branch'inize taşımak isterseniz de kullanabilirsiniz.
-Fazladan `merge commit` işlemi yapılmamış olur ve loglar temizlenmiş ve sıralanmış olur.
-!! `master branch` üzerinde başka bir ekip arkadaşınızın çalışıyor olmaması gerekir.  
-!! Önemli olan `master` branch dışında başka bir branch'de bulunuyor olmaktır.
+- `git rebase` can be used both to clean the log and to rewrite history.
+You can also use it if you want to move the changes from the `master branch` to your own branch.
+No extra `merge commit` will be done and the logs will be cleaned and sorted.
+!! No other teammate should be working on the `master branch`. 
+!! The important thing is to be in a branch other than the `master` branch.
 ```bash
         git rebase master
 ```
 ![](pictures/gitrebase.PNG)
 
 ### [GitHub](#)
-GitHub, sürüm kontrol sistemi olarak Git kullanan yazılım geliştirme projeleri için web tabanlı bir depolama servisidir. <br/>
-Yaptığınız dokümantasyonları Git komutlarını kullanarak paylaşımlı bir şekilde sonradan ulaşabilmenizi sağlayarak depolanızı sağlar. <br/>
-GitHub'a yüklemeden önce GitHub'da `Repositories > New` şeklinde veya arama çubuğu yanındaki `+` simgesine tıklayarak `New repository` seçeneğine tıklayarak yeni bir `Repository` oluşturmamız gerekir. Repo'nuza bir isim (Repository name*) ve isteğe bağlı olarak bir açıklama (Description (optional)) ekleyebilirsiniz. <br/>
-Diğer kullanıcıların Repo'nuzu görmesini istiyorsanız `Public` seçeneği seçili olmalıdır. <br/>
-Diğer kullanıcılar görmesin sadece ben görebileyim derseniz de `Private` seçeneğini seçebilirsiniz. <br/>
+GitHub is a web-based storage service for software development projects that use Git as their version control system. <br/>
+It allows you to store the documentation you have made by using Git commands, allowing you to access them in a shared way later. <br/>
+Before uploading to GitHub, we need to create a new 'Repository' in GitHub by clicking 'Repositories > New' or by clicking the '+' icon next to the search bar and clicking 'New repository'. You can add a name (Repository name*) and optionally a description (Description (optional)) to your repo. <br/>
+The `Public` option must be selected if you want other users to see your Repo. <br/>
+You can choose the 'Private' option if you want only me to see it and not other users. <br/>
 
-- GitHub'ımıza uzaktan bağlanmasını sağlamak için:
-- `origin` içerisinde Repo'nun URL'ini tutar.
+- To enable it to connect remotely to your GitHub:
+- In `origin` it holds the URL of the Repository.
 
 ```bash
         git remote add origin https://github.com/UserName/GitRepoName.git
 ```
 ![](pictures/gitremote.PNG)
 
-- Uzak Repo'muza yapılanları gönderebilmek için:
-!! Üzerinde bulunduğumuz branch `main branch` (ana branch'ınız hangisiyse o branch) olmalı ve o ana branch'ımızda işlemleri gerçekleştirmeliyiz.  
-!! Bu işlemleri yapmadan önce GitHub hesabımızın Git üzerinden oturum açmış olması gerekir.
-`-u`, `origin` ve `main`'a push edeceğini tutar.
+- To be able to post commits to our Remote Repo:
+!! On the branch, the branch should be the 'main branch' (whichever your main branch is) and we should perform the operations in that main branch.      <br/>
+!! Your GitHub account must be signed in to Git before doing these operations.  <br/>
+`-u` holds that it will push to `origin` and `main`.    
 ```bash
         git push -u origin main
 
@@ -412,7 +412,7 @@ Diğer kullanıcılar görmesin sadece ben görebileyim derseniz de `Private` se
 ![](pictures/gitpush2.PNG)
 ![](pictures/gitpush3.PNG)
 
-- `Remote branch`'leri görüntülemek için:
+- To view `remote branches`:
 
 ```bash
         git branch -r
@@ -420,14 +420,14 @@ Diğer kullanıcılar görmesin sadece ben görebileyim derseniz de `Private` se
 ![](pictures/gitbranchR.PNG)
 ![](pictures/gitbranch-.PNG)
 
-Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapmamızı sağlayabilir. 
-- GitHub'daki değişiklikleri kendi `Local Repo`'muza taşımak için:
+Pull Request : GitHub can have us "merge" if there is no conflict between branches.
+- To move changes from GitHub to our "Local Repository":
 
 ```bash
-        git fetch origin BranchAdi
+        git fetch origin BranchName
 ```
 
-- Github'daki değişiklikleri eklemek ve ayrı bir branch oluşturmadan kendi branch'imizin üzerine değişiklikleri kaydetmek için:
+- To add changes from Github and save changes over our own branch without creating a separate branch:
 
         git pull = git fetch + git merge
 
@@ -435,16 +435,16 @@ Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapma
         git pull 
 ```
 
-- Başka birisinin GitHub'ındaki Repo'yu kendi Local Repo'muza ekleyebilmek için:
+- To add a Repo from someone else's GitHub to your Local Repo:
 
 ```bash
         git clone https://github.com/AtakanTurgut/DataStructures_Advanced
 ```
 ![](pictures/gitclone.PNG)
 
-- Fork işlemi yaparak diğer kullanıcıların Repo'sunu kendi hesabımıza Repo olarak ekleyebiliriz.
-- Ardından kendi Repo'muzdan `git clone` komutunu kullanarak kendi `Local Repo`'muzda görebiliriz.'
+- By Forking, we can add other users' Repos as Repo to our own account.
+- Then we can see it in our `Local Repo` using `git clone` command from our Repo.
 
-Private bir Repo'ya geliştirici ekleyebilmek için:
+To add developers to a Private Repo:
 
         RepoName       ->      Collaborators        ->         Add peope
