@@ -447,4 +447,4 @@ Pull Request : GitHub can have us `merge` if there is no conflict between branch
 
 To add developers to a Private Repo:
 
-        RepoName       ->      Collaborators        ->         Add people
+        RepoName       ->      Collaborators        ->         Add people 
