@@ -3,7 +3,7 @@ Git : It is a Version Control System.
 
 ### [Git Installation for Windows](#)
 [[Source]](https://git-scm.com/download/win) for installing Git on Windows.       <br/>
-Using the presets, we click the `Next` button and pass. Lastly, we start the installation by clicking on the 'Install' option, and after installing it, we close it by clicking the 'Finish' button.
+Using the presets, we click the `Next` button and pass. Lastly, we start the installation by clicking on the `Install` option, and after installing it, we close it by clicking the `Finish` button.
 ```bash
         git --version
 ```
@@ -97,8 +97,8 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 ```
  ![](pictures/rm-rf.PNG)
 
-- If we come across a long list that continues, we can move it up or down with the 'arrow keys' from the keyboard.
-- To exit the list, `'q'' keys must be pressed on the keyboard.
+- If we come across a long list that continues, we can move it up or down with the `arrow keys` from the keyboard.
+- To exit the list, `'q'` keys must be pressed on the keyboard.
 
  ![](pictures/TerminalList.PNG)
 
@@ -133,7 +133,7 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
 ```bash
         git status
 ```
-It's always correct to check git status before running "git init" anywhere. <br/>
+It's always correct to check git status before running `git init` anywhere. <br/>
 Otherwise, several different activations of git may cause conflicts.
  ![](pictures/gitstatus.PNG)
 
@@ -386,9 +386,9 @@ No extra `merge commit` will be done and the logs will be cleaned and sorted.
 ### [GitHub](#)
 GitHub is a web-based storage service for software development projects that use Git as their version control system. <br/>
 It allows you to store the documentation you have made by using Git commands, allowing you to access them in a shared way later. <br/>
-Before uploading to GitHub, we need to create a new 'Repository' in GitHub by clicking 'Repositories > New' or by clicking the '+' icon next to the search bar and clicking 'New repository'. You can add a name (Repository name*) and optionally a description (Description (optional)) to your repo. <br/>
+Before uploading to GitHub, we need to create a `New repository` in GitHub by clicking `Repositories > New` or by clicking the `+` icon next to the search bar and clicking `New repository`. You can add a name (Repository name*) and optionally a description (Description (optional)) to your repo. <br/>
 The `Public` option must be selected if you want other users to see your Repo. <br/>
-You can choose the 'Private' option if you want only me to see it and not other users. <br/>
+You can choose the `Private` option if you want only me to see it and not other users. <br/>
 
 - To enable it to connect remotely to your GitHub:
 - In `origin` it holds the URL of the Repository.
@@ -399,7 +399,7 @@ You can choose the 'Private' option if you want only me to see it and not other 
 ![](pictures/gitremote.PNG)
 
 - To be able to post commits to our Remote Repo:
-!! On the branch, the branch should be the 'main branch' (whichever your main branch is) and we should perform the operations in that main branch.      <br/>
+!! On the branch, the branch should be the `main branch` (whichever your main branch is) and we should perform the operations in that main branch.      <br/>
 !! Your GitHub account must be signed in to Git before doing these operations.  <br/>
 `-u` holds that it will push to `origin` and `main`.    
 ```bash
@@ -420,8 +420,8 @@ You can choose the 'Private' option if you want only me to see it and not other 
 ![](pictures/gitbranchR.PNG)
 ![](pictures/gitbranch-.PNG)
 
-Pull Request : GitHub can have us "merge" if there is no conflict between branches.
-- To move changes from GitHub to our "Local Repository":
+Pull Request : GitHub can have us `merge` if there is no conflict between branches.
+- To move changes from GitHub to our `Local Repository`:
 
 ```bash
         git fetch origin BranchName
@@ -442,7 +442,7 @@ Pull Request : GitHub can have us "merge" if there is no conflict between branch
 ```
 ![](pictures/gitclone.PNG)
 
-- By Forking, we can add other users' Repos as Repo to our own account.
+- By Forking, we can add other users Repos as Repo to our own account.
 - Then we can see it in our `Local Repo` using `git clone` command from our Repo.
 
 To add developers to a Private Repo:
