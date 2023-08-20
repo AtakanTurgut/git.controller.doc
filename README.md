@@ -123,7 +123,7 @@ Git commands for Windows, Mac and Linux are no different, they are the same.
  ![](pictures/configUserEmail.PNG)
 
 ### [Git Basic Commands](#)
-```cs
+```c
         Work Folder      =>      Index - Staging       =>       Local Repository
                           git add                      git commit
 ```
