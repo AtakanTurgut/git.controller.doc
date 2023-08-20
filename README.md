@@ -3,12 +3,12 @@ Git : Versiyon Kontrol Sistemidir.
 
 ### [Windows Git Kurulum](#)
 Windows'a Git'i kurmak için [[kaynak]](https://git-scm.com/download/win).       <br/>
-Hazır ayarlar kullanılarak `Next` butonuna tıklayıp geçiyoruz. En son `Install` seçeneğine tıklayarak yüklemeyi başlatıp yüklendikten sonra da `Finish` butonuna tıklayarak kapatıyoruz.
+Hazır ayarlar kullanılarak `Next` butonuna tıklayıp geçebilrsiniz. En son `Install` seçeneğine tıklayarak yüklemeyi başlatıp yüklendikten sonra da `Finish` butonuna tıklayarak kapatabilirsiniz.
 ```bash
         git --version
 ```
 Yükleme işlemi başarıyla sona erdikten sonra yukarıdaki komutu kullanarak Git versiyonunun kontrol edebilisiniz.  <br/>
-Komutları yükleme sonrası `Git Bash` komut iştemcisine yazıyoruz.
+Komutları yükleme sonrası `Git Bash` komut iştemcisine yazabilirsiniz.
 ![](pictures/gitIm1.PNG)
 
 ### [Mac ve Linux Kurulumu](#)
@@ -259,7 +259,7 @@ Master branch içerisinde commit oluşturarak Merge Conflict işlemini çözebil
 
 ### [Stash](#)
 Başka bir branch'da oluşturulan bir dosya commit işlemi yapılmadan git'e eklendiyse (git add <>) ve ardından tekrar başka bir branch'e geçildiyse diğer branch'de oluşturulan dosya da geçilen branch'e taşınır.  <br/>
-Bu durumu önlemek için kendi branch'iniz üzerindeki değişiklikleri saklayıp tutmamız gerekir. Bunun aşağıdaki kodu kullanırız:
+Bu durumu önlemek için kendi branch'iniz üzerindeki değişiklikleri saklayıp tutmamız gerekir. Bunun aşağıdaki kodu kullanabilirsiniz:
 
 ```bash
         git stash 
