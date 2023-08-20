@@ -103,7 +103,7 @@ Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
  ![](pictures/TerminalList.PNG)
 
 ### [Kullanıcı Adı ve Email Girmek](#)
-- Git sistemine kullanıcı adımızı ve email bilgilerimizi kaydetmek için:
+- Git sistemine kullanıcı adınızı ve email bilgilerinizi kaydetmek için:
 
 ```bash
         git config --global user.name "UserName Surname"
@@ -124,7 +124,7 @@ Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
 
 ### [Git Temel Komutları](#)
 ```cs
-        Çalşıma Klasörü      =>      Index - Staging       =>       Local Repository
+        Çalışma Klasörü      =>      Index - Staging       =>       Local Repository
                           git add                      git commit
 ```
 
@@ -177,7 +177,7 @@ Her commit'in kendine ait bir işlem numarası olur. <br/>
 
         HEAD -> master
 
-Üzerinde bulunduğumun branch'ı gösterir
+Üzerinde bulunduğumuz branch'ı gösterir
 ![](pictures/gitlog.PNG)
 
 - Yapılan değişiklikleri tekrardan Git'e eklemek ve kontrolleri tekrardan sağlamak için kısaca:
@@ -200,7 +200,7 @@ Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
 gitignore dosyası içerisine gizli kalmasını istediğimiz dosyayı uzantısıyla birlikte yazmalıyız.
 Gizli kalmasını istediğimiz dosya artık Git sorumluluğuna girmez.
 ```cs
-        gitignore  ==>  dosya.uzantısı
+        .gitignore  ==>  dosya.uzantısı
 ```
 ![](pictures/gitignore2.PNG)
 ![](pictures/gitignore1.PNG)
