@@ -1,109 +1,109 @@
-# Git & GitHub : Versiyon Kontrolü
-Git : Versiyon Kontrol Sistemidir.
+# Git & GitHub : [Version Control](README.md)
+Git : It is a Version Control System.
 
-### [Windows Git Kurulum](#)
-Windows'a Git'i kurmak için [[kaynak]](https://git-scm.com/download/win).       <br/>
-Hazır ayarlar kullanılarak `Next` butonuna tıklayıp geçiyoruz. En son `Install` seçeneğine tıklayarak yüklemeyi başlatıp yüklendikten sonra da `Finish` butonuna tıklayarak kapatıyoruz.
+### [Git Installation for Windows](#)
+[[Source]](https://git-scm.com/download/win) for installing Git on Windows..       <br/>
+Using the presets, we click the `Next` button and pass. Lastly, we start the installation by clicking on the 'Install' option, and after installing it, we close it by clicking the 'Finish' button.
 ```bash
         git --version
 ```
-Yükleme işlemi başarıyla sona erdikten sonra yukarıdaki komutu kullanarak Git versiyonunun kontrol edebiliriz.  <br/>
-Komutları yükleme sonrası `Git Bash` komut iştemcisine yazıyoruz.
+After successfully completing the installation, we can check the Git version using the code above.  <br/>
+We write the commands in the `Git Bash` command processor after installation.
 ![](pictures/gitIm1.PNG)
 
-### [Mac ve Linux Kurulumu](#)
-Mac ve Linux sistemlerde hali hazırda Git kurulu olur.  <br/>
-Eğer sistemde yüklü değilse ve yüklememiz gerekirse [[kaynak]](https://git-scm.com/download).   <br/>
-Binary installer'ı kullanarak Git yüklenebilir.
+### [Git Installation for Mac and Linux](#)
+Mac and Linux systems already have Git installed. <br/>
+If it is not installed on the system and we need to install it [[source]](https://git-scm.com/download).   <br/>
+Git can be installed using the Binary Installer.
 ```bash
         git --version 
 ```     
 
-Yukarıdaki komutu kullanarak Git'in çalışıp çalışmadığını görebiliriz.
+Using the above command we can see if Git is running or not.
 ```bash
         git
 ```
-Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
+If Git is installed, we can access Git Documentation by entering the above command.
 
-### [Git Bash - Terminal Kullanımı](#)
-Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
+### [Git Bash - Terminal Usage](#)
+Git commands for Windows, Mac and Linux are no different, they are the same.
 
-- İçerisinde bulunduğumuz dizinde diğer klasörleri ve dokümanları gösterir.
+- Shows other folders and documents in the current directory.
 
 ```bash
         ls      
 ```
 ![](pictures/ls.PNG)
 
-- Klasör içerisindeki gizli dosyaları da görmek istersek:
+- If we want to see the hidden files in the folder:
 
 ```bash
         ls -la      
 ```
 ![](pictures/ls-la.PNG)
 
-- Üzerinde bulunduğumuz dizini bulmak için:
+- Bulunduğumuz dizini bulmak için:
 
 ```bash
         pwd
 ```
 ![](pictures/pwd.PNG)
 
-- Dizindeki diğer klasörlere ulaşabilmek için:
+- To access other folders in the directory:
 
 ```bash
         cd KlasorAdi
 ```
 ![](pictures/cd.PNG)
 
-- Bir önceki dizine geri dönebilmek için:
+- To go to the previous directory:
 
 ```bash
         cd ..
 ```
 ![](pictures/cd...PNG)
 
-- Terminal çıktılarını temizlemek için:
+- To clear terminal outputs:
 
 ```bash
         clear
 ```
 
-- Dizin üzerinde klasör oluşturmak için:
+- To create a folder in a directory:
 
 ```bash
         mkdir KlasorAdi
 ```
 ![](pictures/mkdir.PNG)
 
-- Dizinde dosya oluşturmak için:
+- To create a file in the directory:
 
  ```bash
         touch dosya.uzantısı
  ```
  ![](pictures/touch.PNG)
 
- - Dizinden dosya kaldırmak için:
+ - To remove files from the directory:
 
 ```bash
         rm dosya.uzantısı
  ```
  ![](pictures/rm.PNG)
 
-- Dizinden klasör kaldırmak için:
+- To remove a folder from the directory:
 
 ```bash
         rm -rf KlasorAdi
 ```
  ![](pictures/rm-rf.PNG)
 
-- Devam eden uzun bir liste karşımıza çıkarsa klavyeden `yön tuşlarıyla` aşağı veya yukarı haraket ettirebiliz.
-- Listeden çıkmak için klavyeden `'q'` tuşuna basılması gerekir.
+- If we come across a long list that continues, we can move it up or down with the 'arrow keys' from the keyboard.
+- To exit the list, `'q'' keys must be pressed on the keyboard.
 
  ![](pictures/TerminalList.PNG)
 
-### [Kullanıcı Adı ve Email Girmek](#)
-- Git sistemine kullanıcı adımızı ve email bilgilerimizi kaydetmek için:
+### [Entering Username and Email](#)
+- To save your Git username and email information:
 
 ```bash
         git config --global user.name "UserName Surname"
@@ -113,7 +113,7 @@ Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
  ![](pictures/configUserName1.PNG)
  ![](pictures/configUserName2.PNG)
 
-- Git sistemine email bilgisini kaydetmek için:
+- To save email information to the Git system:
 
 ```bash
         git config --global user.email user@email.com
@@ -122,65 +122,65 @@ Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
 ```
  ![](pictures/configUserEmail.PNG)
 
-### [Git Temel Komutları](#)
+### [Git Basic Commands](#)
 ```cs
-        Çalşıma Klasörü      =>      Index - Staging       =>       Local Repository
+        Work Folder      =>      Index - Staging       =>       Local Repository
                           git add                      git commit
 ```
 
-- Git güncel durumunu göstermek için:
+- To show the current state of Git:
 
 ```bash
         git status
 ```
-Herhangi bir yerde `git init` komutunu çalıştırmadan önce git durumunu kontrol etmek her zaman için doğru olacaktır. <br/>
-Aksi halde git'i birkaç farklı aktif etme durumu çakışmalara sebep olabilir.
+It's always correct to check git status before running "git init" anywhere. <br/>
+Otherwise, several different activations of git may cause conflicts.
  ![](pictures/gitstatus.PNG)
 
- - Git'i klasörde aktif etmek için:     master veya main branch olarak çalıştırır.
+ - To enable Git in the folder:     runs as master or master branch.
 
  ```bash
         git init
 ```
  ![](pictures/gitinit.PNG)
 
- - Git'e dosya veya klasör eklemek için:
+ - To add files or folders to Git:
 
 ```bash
         git add dosya.uzantısı
 ```
  ![](pictures/gitadd.PNG)
 
-- Git'e yapılanların tümünü eklemek için:
+- To add it to Git:
 
 ```bash
         git add .
 ```
  ![](pictures/gitadd..PNG)
 
-- Git'e eklenenlerin işlenebilmesi için:
+- To add commits to Git:
 
 ```bash
         git commit -m "commit message"
 ```
-- İşleme alma mesajı yapılanları açıklayıcı olmalıdır.
+- The processing message should be descriptive of what has been done.
 
  ![](pictures/gitcommit.PNG)
 
- - İşlemleri görebilmek için:
+ - To view transactions:
 
  ```bash
         git log
 ```
-Her commit'in kendine ait bir işlem numarası olur. <br/>
-İşlem numarasına dönmek istersek o amaçla kullanılır.
+Each commit has its own transaction number. <br/>
+It is used for this purpose when it is desired to go to the processing center.
 
         HEAD -> master
 
-Üzerinde bulunduğumun branch'ı gösterir
+Shows the current branch.
 ![](pictures/gitlog.PNG)
 
-- Yapılan değişiklikleri tekrardan Git'e eklemek ve kontrolleri tekrardan sağlamak için kısaca:
+- To re-introduce what's been done in Git and re-enable the controls, briefly:
 
 ```bash
         git add .
@@ -190,17 +190,17 @@ Her commit'in kendine ait bir işlem numarası olur. <br/>
 ```
 ![](pictures/gitbref.PNG)
 
-Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
-- `git add` yapılmaması gerekir.
-- Öncelikle `.gitignore` isimli bir dosya oluşturmalıyız.
+We don't want to save the files we don't want to share in `Local Repo`.
+- `git add` needs to be done..
+- First we need to create a file named `.gitignore`.
 
 ```bash
         touch .gitignore
 ```
-gitignore dosyası içerisine gizli kalmasını istediğimiz dosyayı uzantısıyla birlikte yazmalıyız.
-Gizli kalmasını istediğimiz dosya artık Git sorumluluğuna girmez.
+gitignore file, we must write the file that we want to be hidden with its extension.
+Incognito file is no longer protected by Git.
 ```cs
-        gitignore  ==>  dosya.uzantısı
+        gitignore  ==>  file.extention
 ```
 ![](pictures/gitignore2.PNG)
 ![](pictures/gitignore1.PNG)
