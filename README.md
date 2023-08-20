@@ -7,23 +7,23 @@ Hazır ayarlar kullanılarak `Next` butonuna tıklayıp geçiyoruz. En son `Inst
 ```bash
         git --version
 ```
-Yükleme işlemi başarıyla sona erdikten sonra yukarıdaki komutu kullanarak Git versiyonunun kontrol edebiliriz.  <br/>
+Yükleme işlemi başarıyla sona erdikten sonra yukarıdaki komutu kullanarak Git versiyonunun kontrol edebilisiniz.  <br/>
 Komutları yükleme sonrası `Git Bash` komut iştemcisine yazıyoruz.
 ![](pictures/gitIm1.PNG)
 
 ### [Mac ve Linux Kurulumu](#)
 Mac ve Linux sistemlerde hali hazırda Git kurulu olur.  <br/>
-Eğer sistemde yüklü değilse ve yüklememiz gerekirse [[kaynak]](https://git-scm.com/download).   <br/>
+Eğer sistemde yüklü değilse ve yüklemeniz gerekirse [[kaynak]](https://git-scm.com/download).   <br/>
 Binary installer'ı kullanarak Git yüklenebilir.
 ```bash
         git --version 
 ```     
 
-Yukarıdaki komutu kullanarak Git'in çalışıp çalışmadığını görebiliriz.
+Yukarıdaki komutu kullanarak Git'in çalışıp çalışmadığını görebilirsiniz.
 ```bash
         git
 ```
-Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabiliriz.
+Git yüklüyse yukarıdaki komutu girerek Git Dokümantasyonuna ulaşabilisiniz.
 
 ### [Git Bash - Terminal Kullanımı](#)
 Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
@@ -123,7 +123,7 @@ Windows, Mac ve Linux için Git komutları farklılık göstermez, aynıdır.
  ![](pictures/configUserEmail.PNG)
 
 ### [Git Temel Komutları](#)
-```cs
+```c
         Çalışma Klasörü      =>      Index - Staging       =>       Local Repository
                           git add                      git commit
 ```
@@ -197,9 +197,9 @@ Gizli kalmasını istediğimiz dosyaları `Local Repo`'ya kaydetmek istemeyiz.
 ```bash
         touch .gitignore
 ```
-gitignore dosyası içerisine gizli kalmasını istediğimiz dosyayı uzantısıyla birlikte yazmalıyız.
-Gizli kalmasını istediğimiz dosya artık Git sorumluluğuna girmez.
-```cs
+gitignore dosyası içerisine gizli kalmasını istediğiniz dosyayı uzantısıyla birlikte yazmalısınız.
+Gizli kalmasını istediğiniz dosya artık Git sorumluluğuna girmez.
+```c
         .gitignore  ==>  dosya.uzantısı
 ```
 ![](pictures/gitignore2.PNG)
@@ -239,7 +239,7 @@ Hangi branch'a merge'leyeceksek o branch üzerinde olmalıyız.
         git branch master
         git merge BirlesirilecekBranch
 ```
-```cs
+```c
         master  <--  BirlesirilecekBranch
         master branchine BirlesirilecekBranch eklenmiş olur.
 ```
@@ -251,7 +251,7 @@ Hangi branch'a merge'leyeceksek o branch üzerinde olmalıyız.
 ![](pictures/gitfastforward.PNG)
 
 ### [Merge Conflict](#)
-Master branc içerisinde commit oluşturarak Merge Conflict işlemini çözebiliriz.
+Master branch içerisinde commit oluşturarak Merge Conflict işlemini çözebilirsiniz.
 ![](pictures/gitconflict1.PNG)
 ![](pictures/gitconflict2.PNG)
 ![](pictures/gitconflict3.PNG)
@@ -259,14 +259,14 @@ Master branc içerisinde commit oluşturarak Merge Conflict işlemini çözebili
 
 ### [Stash](#)
 Başka bir branch'da oluşturulan bir dosya commit işlemi yapılmadan git'e eklendiyse (git add <>) ve ardından tekrar başka bir branch'e geçildiyse diğer branch'de oluşturulan dosya da geçilen branch'e taşınır.  <br/>
-Bu durumu önlemek için kendi branch'imiz üzerindeki değişiklikleri saklayıp tutmamız gerekir. Bunun aşağıdaki kodu kullanırız:
+Bu durumu önlemek için kendi branch'iniz üzerindeki değişiklikleri saklayıp tutmamız gerekir. Bunun aşağıdaki kodu kullanırız:
 
 ```bash
         git stash 
 ```
 ![](pictures/gitstash.PNG)
 
-- Diğer branch üzerinde işlerimizi hallettikten sonra, kendi branch'imizde sakladığımız komutları aşağıdaki kod yardımıyla gerçekleştiririz.
+- Diğer branch üzerinde işlerinizi hallettikten sonra, kendi branch'inizde sakladığınız komutları aşağıdaki kod yardımıyla gerçekleştirebilrisiniz.
 
 ```bash
         git stash pop
@@ -280,7 +280,7 @@ Bu durumu önlemek için kendi branch'imiz üzerindeki değişiklikleri saklayı
 ```
 ![](pictures/gitstashlist.PNG)
 
-- İstediğimiz `Stash`'i işleme almak için:
+- İstediğiniz `Stash`'i işleme almak için:
 
 ```bash
         git stash apply stash@{i}
@@ -295,7 +295,7 @@ Stash'i tekrar uygulamaya alsak da gerektiğinde tekrar kullanabilmek adına yin
 ```
 ![](pictures/gitstashclear.PNG)
 
-- Çalışma yaptığımız dosya commit attıktan sonra bir şekilde bozulur veya sıkkıntı çıkartırsa ise eski commit'li haline döndürmek için aşağıdaki komutu kullanarak düzeltmemizi yapabiliriz:
+- Çalışma yaptığımız dosya commit attıktan sonra bir şekilde bozulur veya sıkkıntı çıkartırsa ise eski commit'li haline döndürmek için aşağıdaki komutu kullanarak düzeltmenizi yapabilirsiniz:
 
 ```bash
         git restore dosya.uzantıs
@@ -303,7 +303,7 @@ Stash'i tekrar uygulamaya alsak da gerektiğinde tekrar kullanabilmek adına yin
 ![](pictures/gitrestore.PNG)
 
 ### [Checkout](#)
-- Commitlerimiz arasında gezinebilmek için:
+- Commitleriniz arasında gezinebilmek için:
 
 ```bash
         git checkout commitId
@@ -345,7 +345,7 @@ Detached HEAD :
 ![](pictures/gitrevert1.PNG)
 ![](pictures/gitrevert2.PNG)
 
-İki dosya arasındaki değişiklikleri veya oluşan farklılıkları görebilmemiz `git diff` komutuyla sağlarız
+İki dosya arasındaki değişiklikleri veya oluşan farklılıkları görebilmek için `git diff`komutunu kullanabilrsiniz.
 - Son `commit` veya başka bir `commit` ile arasında ne gibi değişiklikler var bunları görebilmek için:
 
 ```bash
@@ -427,7 +427,7 @@ Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapma
         git fetch origin BranchAdi
 ```
 
-- Github'daki değişiklikleri eklemek ve ayrı bir branch oluşturmadan kendi branch'imizin üzerine değişiklikleri kaydetmek için:
+- Github'daki değişiklikleri eklemek ve ayrı bir branch oluşturmadan kendi branch'inizin üzerine değişiklikleri kaydetmek için:
 
         git pull = git fetch + git merge
 
@@ -442,8 +442,8 @@ Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapma
 ```
 ![](pictures/gitclone.PNG)
 
-- Fork işlemi yaparak diğer kullanıcıların Repo'sunu kendi hesabımıza Repo olarak ekleyebiliriz.
-- Ardından kendi Repo'muzdan `git clone` komutunu kullanarak kendi `Local Repo`'muzda görebiliriz.'
+- Fork işlemi yaparak diğer kullanıcıların Repo'sunu kendi hesabımıza Repo olarak ekleyebilirsiniz.
+- Ardından kendi Repo'muzdan `git clone` komutunu kullanarak kendi `Local Repo`'muzda görebilisiniz.
 
 Private bir Repo'ya geliştirici ekleyebilmek için:
 
