@@ -452,17 +452,18 @@ To add developers to a Private Repo:
 ---
 ## [Git Large File Storage (LFS)]()
 
-To push large files to github, we must first install the open source git plugin [Git LFS](https://git-lfs.com/).
+To push large files to github, you must first install the open source git plugin [Git LFS](https://git-lfs.com/).
 
-After the installation is finished, we go to the repository directory and start large file tracking for the relevant repo with the help of the following command.
+After the installation is finished, you go to the repository directory and start the large file tracking for the relevant repo with the help of the following command.
 ```
 git lfs install
 ```
-Then, we give the following command to specify which types of files to consider as "large file". In this example, I wanted it to follow the files with the `.gif` extension.
+Then, you can use the following command to specify which types of files to consider as "large file". 
+In this example, I wanted it to follow the files with the `.gif` extension.
 ```
 git lfs track "*.gif"
 ```
-After this process, we add the `.gitattributes` file created to the repository.
+After this process, you add the `.gitattributes` file created to the repository.
 ```
 git add .gitattributes
 ```
