@@ -448,3 +448,21 @@ Pull Request : GitHub bize branch'lar arasında çakışma yok ise `merge` yapma
 Private bir Repo'ya geliştirici ekleyebilmek için:
 
         RepoName       ->      Collaborators        ->         Add people
+---
+## [Git Large File Storage (LFS)]()
+
+Büyük dosyaları github'a göndermek için önce açık kaynaklı git eklentisini [Git LFS](https://git-lfs.com/) kurmanız gerekir.
+
+Kurulum bittikten sonra repository dizinine geçilir ve aşağıdaki komut yardımıyla ilgili repo için büyük dosya takibi başlatılır.
+```
+git lfs install
+```
+Daha sonra hangi tür dosyaların "büyük dosya" olarak değerlendirileceğini belirtmek için aşağıdaki komut verillir. Bu örnekte `.gif` uzantılı dosyaları takip etmesini istedim.
+```
+git lfs track "*.gif"
+```
+Bu işlemden sonra oluşturduğunuz `.gitattributes` dosyasını repository'ye ekliyorsunuz.
+```
+git add .gitattributes
+```
+Artık dosyalarınızı repoya ekleyerek normal akışınıza devam edebilirsiniz.
